@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://artinfo.ba/images/2021-2/hajd-clan23032023.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.margin {
+  margin: 25px;
+}
+
+.header {
+  background-image: url("https://www.shutterstock.com/image-vector/berlin-germany-skyline-detailed-vector-600nw-297304238.jpg");
+  background-size: 1350px 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  height: 170px;
+  text-align: center;
+  font-family: Permanent Marker;
+  font-size: large;
+}
+
+.footer {
+  background-color: #014ea2;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* navbar */
+
+.li-style {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.navbar-flex-container {
+  display: flex;
+  background-color: #014ea2;
+  font-weight: bold;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.navbar-flex-container>li>a {
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 50px;
+}
+
+.navbar-flex-container a:hover {
+  background-color: #015ea0;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.flex-contact {
+  margin-left: auto;
+  order: 2;
+}
+
+
+/* home page */
+.home-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 30px;
+  text-align: justify;
+}
+
+/*logo home page class*/
+.img-float {
+  float: right;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  margin: 0px 0 10px 10px;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+.img-old {
+  float: right;
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 0 0 10px;
+  border-radius: 10px;
+}
+
+.img-fans {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.img-news {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .home-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-flex-container {
+    float: none;
+    width: 100%;
+
+  }
+}
+
+/*trophies table grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-image: url(https://static.jutarnji.hr/images/slike/2022/07/23/k_25567801_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.grid-item-header {
+  background-color: rgb(180, 129, 0);
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 196, 47, 0.507);
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+/*membership page become a member section*/
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: gray;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  padding: 12px 20px;
+  margin: 8px 0px 0 8px;
+}
+
+/*membership page grid*/
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.submit1 {
+  display: grid;
+  grid-column: 1 / 3;
+}
+
+.submit2 {
+  display: grid;
+  grid-column: 3 / 6;
+}
+
+.membership-grid-benefits {
+  display: grid;
+  row-gap: 0;
+  grid-template-columns: auto auto;
+  color: #C23733;
+}
+
+.bl {
+  color: black;
+}
+
+.list-style {
+  list-style-type: disc !important;
+  line-height: 1.8;
+  margin-left: 0;
+}
+
+
+.bullet-list {
+  list-style-type: disc !important;
+}
+
+
+
+/*news page grid*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  text-align: justify;
+  margin: 15px;
+}
+
+.hdr {
+  text-align: justify;
+}
+
+div.hdr>h1 {
+  text-align: left;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 0;
+  margin: 0;
+}
+
+/* contact grid */
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 50px;
+  font-size: 25px;
+}

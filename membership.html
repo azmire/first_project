@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hajduk Split Fan Page</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Hajduk Split Fan Page</h1>
+    </div>
+
+    <nav class="sticky">
+      <ul class="li-style navbar-flex-container">
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="trophies.html">Trophies</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="flex-contact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="left">
+      <h1>Become a member</h1>
+    </div>
+
+    <div class="membership-grid">
+      <div class="submit1">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email adress.."
+          />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="germany">Germany</option>
+            <option value="croatia">Croatia</option>
+            <option value="unitedkingom">United Kingdom</option>
+            <option value="ireland">Ireland</option>
+            <option value="spain">Spain</option>
+            <option value="france">France</option>
+            <option value="austria">Austria</option>
+            <option value="switzerland">Switzerland</option>
+          </select>
+
+          <label>I am:</label>
+          <input type="radio" id="male" name="fav_language" value="Male" />
+          <label for="male">male</label>
+          <input type="radio" id="female" name="fav_language" value="Female" />
+          <label for="female">female</label>
+          <input type="radio" id="other" name="fav_language" value="Other" />
+          <label for="other">other.</label><br />
+          <label>I am </label>
+          <input type="radio" id="underage" name="age" value="underage" />
+          <label for="underage">0-18</label>
+          <input type="radio" id="ofage" name="age" value="ofage" />
+          <label for="ofage">18-65</label>
+          <input type="radio" id="retired" name="age" value="retired" />
+          <label for="retired"> 65+ years old.</label>
+
+          <p>
+            By becoming a member you agree to our
+            <a href="terms&privacy.html" target="_blank">Terms & Privacy</a>.
+          </p>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="submit2">
+        <h2>Membership fees</h2>
+        <p>
+          <b
+            >For all those younger than 18 and older than 65 the membership fee
+            is 10 euros. Also, all those who turn 18 and 65 in the current year
+            pay the annual membership fee of 10 euros. For others, the
+            membership fee is 20 euros.</b
+          >
+        </p>
+
+        <h2>Membership benefits</h2>
+        <div class="membership-grid-benefits list-style">
+          <div>
+            <p>
+              <i class="fa fa-ticket bl" aria-hidden="true"></i> Be among the
+              first to get their tickets for important matches
+            </p>
+            <p>
+              <i class="fa fa-diamond bl" aria-hidden="true"></i> Exclusive
+              membership products
+            </p>
+            <p>
+              <i class="fa fa-id-card bl" aria-hidden="true"></i> 12% discount
+              on the purchase of seasonal tickets
+            </p>
+            <p>
+              <i class="fa fa-percent bl" aria-hidden="true"></i> 12% discount
+              on all purchases in Hajduk's fan shops and web shop
+            </p>
+          </div>
+          <div>
+            <p>
+              <i class="fa fa-camera bl" aria-hidden="true"></i> Wedding photo
+              shoot at the Poljud stadium
+            </p>
+            <p>
+              <i class="fa fa-pencil bl" aria-hidden="true"></i> Participation
+              in elections for the Supervisory Board members
+            </p>
+            <p>
+              <i class="fa fa-commenting bl" aria-hidden="true"></i>
+              Participation in Chats (Ćakule) with the Club’s Management and
+              Supervisory Board
+            </p>
+            <p>
+              <i class="fa fa-credit-card-alt bl" aria-hidden="true"></i>
+              Premium user –Hajduk Family Club loyalty program
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>ALL RIGHTS RESERVED<i class="fa-regular fa-copyright"></i></p>
+      <p>
+        FOLLLOW US ON:<br />
+        <a href="https://de-de.facebook.com/">
+          <i class="fa-brands fa-facebook"></i>Facebook</a
+        >|
+        <a href="https://www.instagram.com/"
+          ><i class="fa-brands fa-instagram"></i>Instagram
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
